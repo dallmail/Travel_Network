@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<meta name=viewport content="width=750,user-scalable=no">
+		<title>热干面</title>
+		<link href="css/1.css" rel="stylesheet">
+		<link href="css/2.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/superfish.css">
+	</head>
+	<body>
+		<!-- adv -->
+		<div class="nav">
+			<div class=box-bottom>
+				<a href=index.html class=logo><img src=img/logo.gif alt=湖北旅游网 /></a>
+				<ul class=channel-list>
+					<li data-code=index><a href=index.html>首页</a></li>
+
+					<li data-code=wzhb> <a>玩转湖北</a>
+						<ul class=down-list>
+							<li><a href="#">明星推荐</a></li>
+							<li><a href="#">酒店动态</a></li>
+							<li><a href="information.html">旅游景区</a></li>
+							<li><a href="#">惠购湖北</a></li>
+						</ul>
+					</li>
+					<li data-code=whhb> <a>文化湖北</a>
+						<ul class="down-list down-list-1">
+							<li><a href="#">湖北简介</a></li>
+							<li><a href="#">历史沿革</a></li>
+							<li><a href="#">地理环境</a></li>
+							<li><a href="#">行政区划</a></li>
+							<li><a href="#">湖北文化</a></li>
+							<li><a href="#">全景漫游</a></li>
+						</ul>
+					</li>
+					<li><a href="#">当地特色</a>
+						<ul class=down-list>
+							<li><a href="specialties.html">当地特色菜</a></li>
+							<li><a href="national.html">当地民俗风采</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+
+		<div class="container page-index">
+			<!-- 首屏 start -->
+			<div class="hero">
+				<div class="overlay"></div>
+				<div class="cover text-center" data-stellar-background-ratio="0.5"
+					style="background-image: url(img/tastebg.jpg);">
+					<div class="desc animate-box" align="center">
+						<h2>Food is No.1 need</h2>
+
+					</div>
+				</div>
+
+			</div>
+			<!-- 首屏 end -->
+			<!-- 侧边栏 -->
+			<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="index.html">首页</a>
+				<a href="information.html">旅游推荐</a>
+				<a href="specialties.html">美食推荐</a>
+				<a href="national.html">民俗风采</a>
+				<a href="#" onclick="closeNav()">返回顶部</a>
+			</div>
+			<div id="main">
+				<img class="arrow-right" src="img/箭头.png" onclick="openNav()">
+			</div>
+			<!-- 侧边栏结束 -->
+
+			<div class="row section2">
+				<ul>
+					<li class="list-1"><a><img src="img/热干面3.jpg" alt=""></a></li>
+					<li class="list-2">
+						<h3>菜品文化</h3>
+						<p>热干面是武汉过早（湖北人将吃早餐叫做“过早”）的首选小吃,武汉人对它的感情,已无需多言.单讲从外地到武汉来玩的人,他们再次想起武汉,多半是因为想起了武汉的热干面.
+							热干面对武汉人或者在武汉呆过一段时间的朋友来说,它不再仅仅是一种小吃，而是一种情怀.</p>
+						<a href="#" class="more">
+							<i class="daq-xa-icon">&#xe640;</i>
+							<span>收藏</span>
+						</a>
+					</li>
+					<li class="list-3">
+						<h3>历史渊源</h3>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;武汉夏天高温，跨时长,长期以来人们在面条中加入食用碱以防变质，这就是热干面的前身——切面。
+							热干面源起于三十年代初期，是汉口长堤街卖汤面的蔡明伟通过不断试验而推出的。
+							清代《汉口竹枝词》有记载："三天过早异平常，一顿狼餐饭可忘。切面豆丝干线粉，鱼餐圆子滚鸡汤。"
+
+						</p>
+					</li>
+					<li class="list-4">
+						<a><img src="img/热干面2.jpg" alt=""></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="container footer">
+			<div class=row>
+				<div class=flexslider>
+					<ul class="slides footer-ad-list"> </ul>
+				</div>
+
+				<ul class=footer-nav>
+					<p class="p1 p2">法律声明：本站部分图文内容取自互联网。您若发现有侵略您著作权行为，请及时告知,我们将在第一时间删除侵权作品、停止继续传播。</p>
+				</ul>
+			</div>
+		</div>
+		<script src=js/jquery-3.2.1.min.js></script>
+		<script src="js/jquery.waypoints.min.js"></script>
+
+	</body>
+	<script type="text/javascript">
+		var mySidenav = document.getElementById('mySidenav');
+		var main = document.getElementById('main');
+		var body = document.body;
+		/*打开侧栏，修改侧栏宽度，主体左跨度、背景透明度*/
+		function openNav() {
+			mySidenav.style.width = "250px";
+			main.style.marginLeft = "250px";
+			document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+		}
+		/*关闭侧栏，恢复原始侧栏宽度，主体左跨度、背景透明度*/
+		function closeNav() {
+			mySidenav.style.width = "0";
+			main.style.marginLeft = "0";
+			body.style.backgroundColor = "white";
+		}
+	</script>
+</html>

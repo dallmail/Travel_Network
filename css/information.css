@@ -1,0 +1,149 @@
+/* 内容显示 */
+.main.center {
+	margin: 24px auto;
+}
+
+.center {
+	width: 100%;
+	margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+	.center {
+		width: 1200px;
+	}
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+/* 切换页面 */
+.dap-page {
+	padding: 30px 0;
+	line-height: 50px;
+	text-align: center
+}
+
+.dap-page span {
+	display: inline-block;
+	padding: 0 20px;
+	margin: 0 5px;
+	cursor: pointer;
+	font-size: 24px;
+	color: #666;
+	background: #fff;
+	border-radius: 4px;
+	transition: all .25s ease 0s;
+	border: 1px solid #e9e9e9
+}
+
+.dap-page span:hover {
+	border-color: #b21f1f
+}
+
+.dap-page .page-curr,
+.dap-page span:hover {
+	background: #b21f1f;
+	color: #fff
+}
+
+.dap-page .dot,
+.dap-page .page-no {
+	color: #999;
+	cursor: no-drop
+}
+
+.dap-page .dot:hover,
+.dap-page .page-no:hover {
+	background: #fff;
+	color: #999;
+	border: 1px solid #e9e9e9
+}
+
+@media (min-width:1200px) {
+	.dap-page {
+		line-height: 38px
+	}
+
+	.dap-page span {
+		padding: 0 15px;
+		font-size: 14px
+	}
+}
+
+/* 侧边栏 */
+@charset "utf-8";
+
+body {
+	font-family: "Lato", sans-serif;
+	transition: background-color .5s;
+}
+
+/*侧边栏选择器*/
+.sidenav {
+	height: 100%;
+	width: 0;
+	/*原始宽度*/
+	position: fixed;
+	/*z-index、top、left共同控制侧栏的悬浮（上方1，下方-1）*/
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	/*侧栏延迟0.5s显示*/
+	padding-top: 60px;
+}
+
+/*侧边栏标签选择器*/
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+	/*标签延迟0.3s显示*/
+}
+
+/*侧栏标签和关闭按钮光标的效果*/
+.sidenav a:hover,
+.offcanvas a:focus {
+	color: #f1f1f1;
+}
+
+/*侧栏和关闭按钮的位置选择器*/
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+/*主体内容*/
+#main {
+	transition: margin-left .5s;
+	/*主体内容延迟0.5s整体y右移动*/
+	padding: 16px;
+}
+
+/*当文档高度小于450px时，改变侧栏的padding属性和字体大小*/
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+
+/* 侧边导航栏 */
+.arrow-right {
+	width: 54px;
+	height: 54px;
+	background: url(img/箭头.png);
+}

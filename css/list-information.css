@@ -1,0 +1,184 @@
+*,
+.container {
+	box-sizing: border-box
+}
+
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%
+}
+.hide-lg,
+.hide-md,
+.hide-sm {
+	display: none !important
+}
+
+.show-lg,
+.show-md,
+.show-sm {
+	display: inline-block !important
+}
+
+@media (min-width:750px) {
+	.container {
+		width: 100%
+	}
+
+	.hide-xs {
+		display: inline-block !important
+	}
+}
+
+@media (min-width:992px) {
+	.hide-sm {
+		display: inline-block !important
+	}
+
+	.show-sm {
+		display: none !important
+	}
+}
+@media (min-width:1200px) {
+
+	.hide-md {
+		display: inline-block !important
+	}
+
+	.show-md {
+		display: none !important
+	}
+}
+.container-fluid {
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 42px;
+	padding-left: 42px
+}
+
+/* 内容 */
+.list {
+	width: 100%;
+	margin-top: 10px;
+	overflow: hidden
+}
+
+.list .loading {
+	margin-top: 115px
+}
+
+.list .item {
+	float: left;
+	width: 100%;
+	height: 560px;
+	margin: 24px 24px 0 0
+}
+
+.list .item a {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 560px;
+	padding-top: 10px;
+	background: #fff
+}
+
+.list .item:hover a,
+.list .item a {
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	transition-duration: .5s
+}
+
+.list .item:hover a {
+	margin-top: -6px
+}
+
+.list .item:hover .view-shadow {
+	display: block
+}
+
+.list .item:hover .title {
+	color: #b21f1f
+}
+
+.list .item-hd {
+	position: relative;
+	width: 100%;
+	height: 375px;
+	margin: 0 auto;
+	overflow: hidden;
+	background-color: #eee
+}
+
+.list .item-bd {
+	padding: 30px 10px 0;
+	line-height: 34px;
+	font-size: 24px
+}
+
+.list .item-bd .title {
+	font-size: 30px;
+	font-weight: 700;
+	color: #333;
+	width: overflow
+}
+
+.list .item-bd .title,
+.list .item-bd .title i {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: normal
+}
+
+.list .item-bd .title i {
+	display: none;
+	vertical-align: top;
+	width: 4px;
+	height: 34px;
+	margin: 2px 10px 0 0;
+	background: #b21f1f;
+	border-radius: 2px;
+	width: overflow
+}
+
+.list .item-bd p {
+	color: #666;
+	padding-top: 10px
+}
+
+@media (min-width:1200px) {
+	.list {
+		width: 1224px
+	}
+
+	.list .item {
+		width: 384px;
+		height: 388px
+	}
+
+	.list .item a {
+		height: 378px
+	}
+
+	.list .item-hd {
+		width: 364px;
+		height: 272px
+	}
+
+	.list .item-bd {
+		padding: 15px 10px 0;
+		line-height: 18px;
+		font-size: 14px
+	}
+
+	.list .item-bd .title {
+		font-size: 16px
+	}
+
+	.list .item-bd .title i {
+		display: inline-block;
+		height: 14px
+	}
+}
